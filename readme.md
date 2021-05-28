@@ -1,6 +1,6 @@
 ## Using Selenium and Twilio to get notifications for vaccine slots in India
 
-This repository holds the code for my medium blog of the same name. I used Selenium to do interactive web browsing on the [CoWIN](https://www.cowin.gov.in/home) website and whenever a vaccine slot shows up in my pincode, I receive a call on my phone using Twilio's Voice API. 
+This repository holds the code for my [medium blog](https://medium.com/@aditya.rastogi/using-selenium-and-twilios-voice-api-to-call-myself-for-getting-my-vaccine-slot-booked-in-india-7e95626f02eb?sk=6db4c55a224da9821e0df39e2925fa3b). I used Selenium to do interactive web browsing on the [CoWIN](https://www.cowin.gov.in/home) website and whenever a vaccine slot shows up in my pincode, I receive a call on my phone using Twilio's Voice API. 
 
 ### Running the Code
 
