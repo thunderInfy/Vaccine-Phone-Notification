@@ -17,13 +17,13 @@ with open("data.json","r") as f:
 count = 0
 delay = 3
 pin = data["pincode"]
-website = 'https://www.cowin.gov.in/home'
+website = 'https://www.cowin.gov.in/'
 
 searchbypin = '//*[@id="mat-tab-label-0-1"]/div'
 pincodefield = '//*[@id="mat-input-0"]'
 login_submit = '//*[@id="mat-tab-content-0-1"]/div/div[1]/div/div/button'
-age18plus = '/html/body/app-root/div/app-home/div[2]/div/appointment-table/div/div/div/div/div/div/div/div/div/div/div[2]/form/div/div/div[1]/div/div[1]/label'
-databasepath = '/html/body/app-root/div/app-home/div[2]/div/appointment-table/div/div/div/div/div/div/div/div/div/div/div[2]/form/div/div/div[7]'
+age18plus = '/html/body/app-root/div/app-home/div[3]/div/appointment-table/div/div/div/div/div/div/div/div/div/div/div[2]/form/div/div/div[2]/div[1]/div/div[1]/label'
+databasepath = '/html/body/app-root/div/app-home/div[3]/div/appointment-table/div/div/div/div/div/div/div/div/div/div/div[2]/form/div/div/div[2]/div[7]'
 
 def construct_df(soup):
     L = soup.findAll(True, {'class':['center-name-title','center-name-text', 'slots-box']})
@@ -65,7 +65,7 @@ def construct_df(soup):
 while(1):
 
     opts = Options()
-    opts.add_argument('--headless')
+    # opts.add_argument('--headless')
     browser = webdriver.Firefox(firefox_options=opts,executable_path='./geckodriver')
     browser.get(website)
     browser.find_element_by_xpath(searchbypin).click()
