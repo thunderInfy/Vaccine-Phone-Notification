@@ -65,7 +65,7 @@ def construct_df(soup):
 while(1):
 
     opts = Options()
-    # opts.add_argument('--headless')
+    opts.add_argument('--headless')
     browser = webdriver.Firefox(firefox_options=opts,executable_path='./geckodriver')
     browser.get(website)
     browser.find_element_by_xpath(searchbypin).click()
